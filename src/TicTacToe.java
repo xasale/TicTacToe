@@ -12,7 +12,7 @@ public class TicTacToe {
 
     public static void initializeGameBoard(String[][] gameBoard){
 
-        String[][] gameboard = new String[5][5];
+        String[][] gameboard = new String[5][5] ;
 
         for (int i=0; i<=5; i++){
             for (int j=0; j<=5; j++){
