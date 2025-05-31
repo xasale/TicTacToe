@@ -11,10 +11,14 @@ public class TicTacToe {
         int col = keyboard.nextInt();
         //System.out.println(row + " και " + col);
 
+        if (row == col) {
+            String[][] mygameBoard = new String[row][col];
 
-        String[][] mygameBoard = new String[row][col];
-
-        initializeGameBoard(mygameBoard);
+            initializeGameBoard(mygameBoard);
+        }
+        else {
+            System.out.println("θα πρέπει οι αριθμοί να είναι ίδιοι");
+        }
 
 
     }// end of main
