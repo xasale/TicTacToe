@@ -39,8 +39,6 @@ public class TicTacToe {
 //        gameBoard[2][1] = "21";
 //        gameBoard[2][2] = "22";
 
-        //
-
         System.out.println("το μεγεθος του gameboard ειναι " + gameBoard.length + "x" + gameBoard.length);
         System.out.print("τα ονοματα στα τετραγωνα ειναι: ");
         for (int row = 0; row < gameBoard.length; row++){
