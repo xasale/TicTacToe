@@ -32,7 +32,7 @@ public class TicTacToe {
 
     public static void initializeGameBoard(String[][] gameBoard){
 
-        System.out.println("το μεγεθος του gameboard ειναι " + gameBoard.length + "x" + gameBoard.length);
+        System.out.println("το μεγεθος του gameboard ειναι " + gameBoard.length + "*" + gameBoard.length);
         System.out.print("τα ονοματα στα τετραγωνα ειναι: ");
         for (int row = 0; row < gameBoard.length; row++){
             for (int col = 0; col < gameBoard.length; col++){
@@ -115,7 +115,7 @@ public class TicTacToe {
                         getUserInput(xTurn, gameBoard);
 
                 } else {
-                    gameBoard[myrow][mycol] = " X ";
+                    gameBoard[myrow][mycol] = "X";
                     printCurrentBoard(gameBoard);
                     if (isBoardFull(gameBoard)){
                         break;
@@ -155,7 +155,7 @@ public class TicTacToe {
                         getUserInput(xTurn, gameBoard);
 
                 } else {
-                    gameBoard[myrow][mycol] = " Y ";
+                    gameBoard[myrow][mycol] = "Y";
                     printCurrentBoard(gameBoard);
                     if (isBoardFull(gameBoard)){
                         break;
@@ -179,7 +179,7 @@ public class TicTacToe {
 
     public static boolean cellAlreadyOccupied(int row, int col, String[][] gameBoard){
 
-        if (Objects.equals(gameBoard[row][col], " X ") || Objects.equals(gameBoard[row][col], " Y ")){
+        if (Objects.equals(gameBoard[row][col], "X") || Objects.equals(gameBoard[row][col], "Y")){
             return true;
         }
         else {
@@ -270,7 +270,7 @@ public class TicTacToe {
 
         for (int row = 0; row < gameBoard.length; row++) {
             for (int col = 0; col < gameBoard.length; col++) {
-                if (Objects.equals(gameBoard[row][col], " X ") || Objects.equals(gameBoard[row][col], " Y ")) {
+                if (Objects.equals(gameBoard[row][col], "X") || Objects.equals(gameBoard[row][col], "Y")) {
                     count++;
                 }
             }
